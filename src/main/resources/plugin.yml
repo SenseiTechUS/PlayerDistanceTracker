@@ -1,0 +1,7 @@
+name: ${project.name}
+main: dev.audaxius.playerdistancetracker.PlayerDistanceTracker
+version: ${project.version}
+api-version: 1.15
+
+description: ${project.description}
+author: Mahr Bazlee
