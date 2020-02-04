@@ -21,13 +21,13 @@ public class CompassEvent implements Listener {
         ItemStack item = player.getInventory().getItem(event.getNewSlot());
 
         ItemStack compass = new ItemStack(Material.COMPASS);
-        if(item == null){
+        if (item == null) {
             return;
         }
         if (item.isSimilar(compass)) {
             if (trackers.containsKey(player)) {
                 Player target = trackers.get(player);
-                int distance = (int)player.getLocation().distance(target.getLocation());
+                int distance = (int) player.getLocation().distance(target.getLocation());
                 player.sendActionBar(ChatColor.WHITE + target.getDisplayName() + ChatColor.AQUA + " is " + ChatColor.WHITE + distance + ChatColor.AQUA + " blocks away");
             }
         }

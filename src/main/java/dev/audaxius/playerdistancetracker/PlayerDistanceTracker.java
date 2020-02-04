@@ -12,6 +12,18 @@ public class PlayerDistanceTracker extends JavaPlugin {
     public static PaperCommandManager commandManager;
     public static PluginManager pluginManager;
 
+    public static PlayerDistanceTracker getInstance() {
+        return instance;
+    }
+
+    public static PaperCommandManager getCommandManager() {
+        return commandManager;
+    }
+
+    public static PluginManager getPluginManager() {
+        return pluginManager;
+    }
+
     @Override
     public void onLoad() {
 
@@ -35,17 +47,5 @@ public class PlayerDistanceTracker extends JavaPlugin {
     public void onDisable() {
 
         getLogger().info("PlayerDistanceTracker is disabled!");
-    }
-
-    public static PlayerDistanceTracker getInstance() {
-        return instance;
-    }
-
-    public static PaperCommandManager getCommandManager() {
-        return commandManager;
-    }
-
-    public static PluginManager getPluginManager() {
-        return pluginManager;
     }
 }
